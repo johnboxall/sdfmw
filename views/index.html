@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero-unit">
+            <h1>
+                Sane Defaults for Optimizing
+                <br>
+                Mobile Web Performance
+            </h1>
+            <p>John Boxall,  Jan 26, 2013</p>
+        </div>
+
+        <!-- <h2>Why?</h2> -->
+
+
+<!--
+Why do we need to do this?
+-> Phones are slow.
+->
+
+
+
+
+-->
+
+            <!-- On the next project you start, why not make these part of the setup?
+            Why not arrange things _this_ way. spend the 1 day it takes to set them up
+
+        -->
+
+
+
+        <ul>
+            <li>
+                <h3>Place &lt;script&gt;s near &lt;/body&gt; to unblock rendering</h2>
+                <p>
+                    When a browser encounters JavaScript it must stop fetch, parse
+                    and execute the script to continue. Place JavaScript at the
+                    bottom of your document to avoid blocking the browser and
+                    speed up rendering. <a href="/blocking/">Demo →</a>
+                </p>
+            </li>
+            <li>
+                <h3>Use a CDN to decrease request times</h2>
+                <p>
+                    Content Distribution Networks use multiple endpoints
+                    reduce the distance between the browser and the content. This
+                    improved pathway reduces the time it takes for the browser to
+                    fetch resources. <a href="/cdn/">Demo →</a>
+                </p>
+            </li>
+            <li>
+                <h3>Add caching headers to static resources to reduce requests</h2>
+                <p>
+                    The fastest request is the one never made. By serving static
+                    assets with caching headers you can reduce the number of required
+                    to load your page. <a href="/caching/">Demo →</a>
+                </p>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>Tools and Resources</h2>
+        <ul>
+            <li><a href="http://developer.yahoo.com/yslow/">YSlow</a></li>
+            <li><a href="https://developers.google.com/speed/pagespeed/">PageSpeed</a></li>
+            <li><a href="https://developers.google.com/speed/docs/best-practices/rules_intro">
+                Google's Web Performance Best Practices</a></li>
+            <li><a href="http://calendar.perfplanet.com/2012/">Web Performance Calendar</a></li>
+            <li><a href="http://www.stevesouders.com/blog/">High Performance Web Sites</a></li>
+            <li><a href="http://www.charlesproxy.com/">Charles Web Debugging Proxy</a></li>
+        </ul>
+
+        <hr>
+
+        <footer>
+            <p><a href="//twitter.com/johnboxall">@johnboxall</a></p>
+        </footer>
+    </div>
+</body>
+</html>
